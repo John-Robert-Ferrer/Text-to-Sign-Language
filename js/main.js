@@ -4,11 +4,10 @@ console.log('Output: once', once);
 function search() {
 	var search = $('#search_name').val();
 	var title;
-	// console.log(search);
+	var apiKey = '';
 	var xhr = $.get(
-		'http://api.giphy.com/v1/gifs/search?q=sign%20with%20robert&api_key=N6fDSNgTp2KwnvoO8VNUz10tsryx1fTS&limit=30&offset=200'
+		`http://api.giphy.com/v1/gifs/search?q=sign%20with%20robert&api_key=${apiKey}&limit=30&offset=200`
 	);
-	// var xhr = $.get("http://api.giphy.com/v1/gifs/l4q88nfCo5ipr79Ly?api_key=N6fDSNgTp2KwnvoO8VNUz10tsryx1fTS");
 
 	xhr.done(function(data) {
 		// console.log("available:");
