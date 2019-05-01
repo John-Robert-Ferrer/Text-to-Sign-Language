@@ -4,7 +4,7 @@ console.log('Output: once', once);
 function search() {
 	var search = $('#search_name').val();
 	var title;
-	var apiKey = '';
+	var apiKey = 'N6fDSNgTp2KwnvoO8VNUz10tsryx1fTS';
 	var xhr = $.get(
 		`http://api.giphy.com/v1/gifs/search?q=sign%20with%20robert&api_key=${apiKey}&limit=30&offset=200`
 	);
